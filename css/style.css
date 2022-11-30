@@ -115,18 +115,24 @@
     margin-bottom: 4.2em;
   }
   .trend_text_wrapper {
-    margin: 55% 5% 3%;
     border: 3px solid #b59f5b;
+    padding: 30px;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    right: 25px;
   }
 
   .trend_post {
+    background-size: auto;
+    height: 45vh;
     width: 24.8%;
     position: relative;
-    text-align: center;
     background-color: #000000;
     background-repeat: no-repeat;
     background-position: top;
     z-index: 1;
+
   }
 
   .trend_one {
@@ -156,8 +162,8 @@
 
   .tag {
     list-style-type: none;
-    display: inline-block;
-    margin: 0.3em;
+    display: flex;
+    margin: 0 0.5em 0.3em 0;
   }
   .tags_trend {
    display: flex;
@@ -171,8 +177,10 @@
   }
  
   .trend_text {
-    font: 18px OpenSans_Bold;
+    font: 17px OpenSans_Bold;
     text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
   }
   .trend_text_link {
     text-decoration: none;
@@ -180,9 +188,9 @@
   }
 
   .main {
-    width: 70%;
     margin: auto;
     margin-bottom: 2.5em;
+    width: 71%;
   }
   
   .main_wrapper {
@@ -196,6 +204,7 @@
   }
   .main_posts {
     margin-right: 3em;
+    width: 775px;
   }
   .image {
     width: 100%;
@@ -277,7 +286,7 @@
   }
 
   .aside {
-    width: 26%;
+    width: 272px;
   }
   
   .aside_post {
@@ -321,7 +330,6 @@
   
   /*Стилизация поиска и кнопки*/
   .search {
-    width: 272px;
     display: flex;
   }
   
@@ -331,6 +339,7 @@
     background-color: #f4f7f6;
     padding: 6px 12px;
     outline: none;
+    width: 224px;
   }
   .field:focus {
     border: 1px solid #b59f5b;
@@ -388,6 +397,7 @@
     border-style: none;
     background-color: #f4f7f6;
     padding-left: 10px;
+    margin-bottom: 15px;
   }
   
   /*Стилизация тегов эсайд*/
@@ -446,7 +456,8 @@
 
 }
 .shop_item {
-  width: 25%;
+  position: relative;
+  margin-bottom: 15em;
 }
 .product_description {
   margin-bottom: 2em;
@@ -464,18 +475,34 @@
 }
 .price_wrapper {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper_text_price {
+  position: absolute;
+  outline: 3px solid #b59f5b;
+  outline-offset: 28px;
+  padding: 15px;
+  box-sizing: border-box;
+  
 }
 .text_shop {
-  margin-bottom: 2em;
-
-  border: 3px solid #b59f5b;
+  margin-bottom: 25px;
 }
 .title_shop {
   margin-top: 1em;
   margin-bottom: 0.8em;
   font: 20px OpenSans_Bold;
   text-transform: uppercase;
+}
+.price_shop {
+  display: flex;
+  flex-direction: column;
+  font-family: OpenSans_Bold;
+}
+
+.old_price {
+
 }
   
   /*Стилизация соц.сетей*/
@@ -493,6 +520,7 @@
     padding: 30px 0;
     background-color: #f4f7f6;
     margin-bottom: 20px;
+
   }
   
   .socials_list {
@@ -535,3 +563,77 @@
     text-align: center;
   }
   
+
+
+  @media (min-width: 641px) and (max-width: 1200px ) {
+    
+    .header {
+    padding: 50px 35px 0;
+    background-image: url(../images/banner-bg-tablet.jpg);
+    }
+
+    .title_header {
+      font-size: 34px;
+    }
+
+    .logo {
+      width: 160px;
+    }
+
+    .menu_list {
+      display: none;
+    }
+
+    .menu {
+      content: " ";
+      height: 20px; 
+      width: 25px;
+      border-bottom: 12px double rgb(255, 255, 255); 
+      border-top: 4px solid rgb(255, 255, 255); 
+    }
+
+    .trends_wrapper {
+      flex-wrap: wrap;
+    }
+    .trend_post {
+      width: 49.8%;
+      margin-bottom: 0.5%;
+    }
+    .trend_text {
+      font: 14px OpenSans_Bold;
+    }
+    .main {
+      margin: auto;
+      margin-bottom: 2.5em;
+      width: 92%;
+    }
+    
+    .main_posts {
+      width: 56%;
+      margin-right: 0;
+    }
+    .text_post {
+      width: 56%;
+    }
+    
+    .post {
+      display: flex;
+      flex-direction: column;
+    }
+    
+
+    .title_post {
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+      font: 18px OpenSans_Bold;
+    }
+    .aside {
+      width: 35%;
+    }
+    .shop_wrapper {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    
+    }
+
+  }
