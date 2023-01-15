@@ -19,7 +19,7 @@
   /*Стилизация шапки */
   .header {
     width: 100%;
-    padding: 2.5% 14% 0;
+    padding: 2.5% 0;
     margin-bottom: 4.2em ;
   }
   
@@ -45,7 +45,7 @@
   }
   
   .menu_list_item:not(:first-child) {
-    margin-left: 3em;
+    margin-left: 2.5em;
   }
   
   .link_menu_item {
@@ -56,7 +56,8 @@
   .logo_menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 1170px;
+    margin: auto;
   }
   
   .headline {
@@ -192,7 +193,7 @@
   .main {
     margin: auto;
     margin-bottom: 60px;
-    width: 71%;
+    width: 1170px;
   }
   
   .main_wrapper {
@@ -283,7 +284,7 @@
   .aside_section {
     margin-bottom: 3.75em;
   }
-  .sectoin_search {
+  .section_search {
     margin-bottom: 3.75em;
   }
 
@@ -331,9 +332,7 @@
 }
   
   /*Стилизация поиска и кнопки*/
-  .search {
-    display: flex;
-  }
+
   
   .field {
     height: 48px;
@@ -341,12 +340,12 @@
     background-color: #f4f7f6;
     padding: 6px 12px;
     outline: none;
-    width: 224px;
+    width: 225px;
+    position: absolute;
   }
   .field:focus {
     border: 1px solid #b59f5b;
   }
-  
   .button {
     width: 48px;
     height: 48px;
@@ -362,6 +361,10 @@
   
     flex-shrink: 0;
     cursor: pointer;
+    position: relative;
+    left: 225px;
+
+
   }
   
   .button:nth-child(2):hover {
@@ -455,7 +458,7 @@
 
 .shop_wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
 
 }
@@ -463,13 +466,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 3%;
-  flex-basis: 350px;
+  flex-basis: 30%;
 }
 
 
 .product_description {
   margin-bottom: 2em;
+  font: 15px OpenSans_Regular;
+}
+
+.shop_link {
+  color: #b59f5b;
+  text-decoration: none
 }
 
 .text_button_shop {
@@ -492,8 +500,10 @@
  border: 3px solid #b59f5b;
  padding: 20px 40px;
  display: flex;
+ justify-content: center;
+ align-items: center;
  flex-direction: column;
- height: 267px;
+ min-height: 267px;
 
  position: relative;
  bottom: 30px;
@@ -511,7 +521,7 @@
 .price_shop {
   display: flex;
   flex-direction: column;
-  font-family: OpenSans_Bold;
+  font: 14px OpenSans_Bold;
 }
 
 .old_price {
@@ -522,22 +532,22 @@
   font-size: large;
 }
 
+
   
   /*Стилизация соц.сетей*/
   .footer {
-    margin-top: 60px;
+    margin-bottom: 40px;
   }
   
   .footer_wrapper {
-    width: 1200px;
+    width: 1170px;
     margin: auto;
-    padding: 0 15px;
   }
   
   .socials {
     padding: 30px 0;
     background-color: #f4f7f6;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 
   }
   
@@ -596,6 +606,9 @@
     .title_header {
       font-size: 38px;
     }
+    .logo_menu {
+      width: auto;
+    }
 
     .logo {
       width: 160px;
@@ -627,14 +640,13 @@
       font: 17px OpenSans_Bold;
     }
     .main {
-      margin: auto;
       margin-bottom: 2.5em;
-      width: 92%;
+      width: 91%;
     }
+
     
     .main_posts {
-      width: 56%;
-      margin-right: 0;
+      margin: auto;
     }
     .text_post {
       width: 100%;
@@ -643,6 +655,11 @@
     .post {
       display: flex;
       flex-direction: column;
+      margin-right: 35px;
+
+    }
+    .picture_post {
+      width: 100%;
     }
     
 
@@ -652,24 +669,62 @@
       font: 17px OpenSans_Bold;
     }
     .aside {
-      width: 36%;
+      width: 68.5%;
+      max-width: 397px;
     }
+    .aside_post {
+      width: 100%;
+    }
+    .button {
+      left: 29.5vw;
+    }
+
+    .button_email {
+      width: 34.5vw;
+    }
+    .field_email {
+      width: 34.5vw;
+    }
+
+    .field {
+      width: 31vw;
+    }
+
+    .aside_tags {
+      width: 100%;
+    }
+
     .shop_wrapper {
-      justify-content: baseline;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
     .shop_item {
-      width: 47%;
-      flex-basis: 350px;
+      flex: 0 1 48%;
+      margin-right: 1px;
+    }
+    .wrapper_text_price {
+    display: table;
+    min-width: 320px;
+    }
+    .price_wrapper {
+      width: auto;
+    }
+    .shop {
+      width: 100%;
     }
     .footer_wrapper {
-      width: 700px;
+      width: 90%;
     }
 
-  }
+    }
+  
+
+
+  
 
 
   @media  (max-width: 640px ) {
+
     .header {
       padding: 0%;
       background-image: url(../images/banner-mobile.jpg);
@@ -677,7 +732,7 @@
 
     .logo {
       width: 272px;
-      margin-bottom: 40px;
+      margin: 0 auto 60px;
     }
     .headline {
       text-align: center;
@@ -703,6 +758,8 @@
       justify-content: center;
       flex-direction: column-reverse;
       align-self: end;
+      width: auto;
+
     }
     .menu_list {
       display: none;
@@ -713,55 +770,62 @@
     }
     .trend_post {
       width: 100%;
-      margin: 0.3% 0;
+      margin: 0.1% 0;
     }
     .main {
-      width: 331px;
+      width: 91%;
+      margin: auto;
     }
     .main_wrapper {
       flex-direction: column;
     }
     .main_posts {
-      margin-bottom: 60px;
+      margin: 0 0 60px;
+      width: auto;
     }
     .post {
       flex-direction: column;
+      margin: auto;
     }
     .picture_post {
-      margin-right: 0;
-      width: 331px;
+      margin: auto;
+      width: 100%;
+      
     }
     .text_post {
-      width: 331px;
+      width: 100%;
     }
     .aside {
-      width: 331px;
+      width: 100%;
     }
     .field {
-      width: 280px;
+      width: 83vw;
+    }
+    .button {
+      left: 83vw;
     }
     .button_email {
-      width: 331px;
+      width: 91vw;
     }
     .field_email {
-      width: 331px;
+      width: 91vw;
     }
     .aside_tag {
       font-size: 12px;
     }
     .aside_tags {
-      width: 331px;
+      width: 100%;
   }
     .shop_wrapper {
       flex-direction: column;
     }
 
     .shop_picture {
-      width: 285px;
+      width: auto;
       text-align: center;
     }
     .footer_wrapper {
-      width: 331px;
+      width: 91%;
     }
 
   }
