@@ -15,17 +15,52 @@
     margin: 0;
     padding: 0;
   }
+  /*Стилизация popup*/
+  .popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 54px;
+
+  }
+  .popup_container {
+    width: 390px;
+    margin: auto;
+
+  }
+  .popup_item {
+    margin: 0 30px 30px;
+  }
+  .popup_cell {
+    width: 330px;
+  }
+  .popup_title {
+    text-transform: uppercase;
+    font: 20px OpenSans_Bold;
+  }
+  .select_popup {
+    height: 50px;
+  }
+  .popup_button {
+    height: 49px;
+    background-color: #b59f5b;
+    border: none;
+    font: 14px OpenSans_Bold;
+    color: #eeeeee;
+    text-transform: uppercase;
+  }
   
   /*Стилизация шапки */
   .header {
     width: 100%;
-    padding: 2.5% 0;
-    margin-bottom: 4.2em ;
+    padding: 32px 5px;
+    margin-bottom: 60px;
   }
   
   
   .logo {
-    width: 12em;
+    width: 181px;
+    margin-left: 7px;
   }
   
   .menu_list {
@@ -62,14 +97,14 @@
   
   .headline {
     margin: auto;
-    padding: 8em 0;
+    padding: 110px 0;
     text-align: center;
     width: 685px;
   }
   
   .title_header {
     font-family: OpenSans_Bold;
-    font-size: 43px;
+    font-size: 44px;
     color: #ffffff;
     text-transform: uppercase;
   }
@@ -97,7 +132,7 @@
     z-index: -1;
   }
   .heading_trends {
-    font: 18px OpenSans_Bold;
+    font: 19px OpenSans_Bold;
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 1.25em;
@@ -107,18 +142,18 @@
     display: block;
     width: 67px;
     height: 3px;
-    margin: 13px auto 0;
+    margin: 10px auto 0;
     background-color: #e1d9bd;
   }
 
   .trends_wrapper {
     display: flex;
     justify-content:space-between;
-    margin-bottom: 4.2em;
+    margin-bottom: 60px;
   }
   .trend_text_wrapper {
     border: 3px solid #b59f5b;
-    padding: 30px;
+    padding: 33px;
     position: absolute;
     bottom: 15px;
     left: 25px;
@@ -127,7 +162,8 @@
 
   .trend_post {
     background-size: auto;
-    height: 45vh;
+    height: 19vw;
+    min-height: 321px;
     width: 24.8%;
     position: relative;
     background-color: #000000;
@@ -180,10 +216,11 @@
   }
  
   .trend_text {
-    font: 17px OpenSans_Bold;
+    font: 18px OpenSans_Bold;
     text-transform: uppercase;
     display: flex;
     align-items: flex-end;
+    max-height: 100%;
   }
   .trend_text_link {
     text-decoration: none;
@@ -192,7 +229,7 @@
 
   .main {
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 39px;
     width: 1170px;
   }
   
@@ -200,17 +237,17 @@
     display: flex;
     margin: auto;
     justify-content: space-between;
-    margin-bottom: 2.5em;
+    margin-bottom: 40px;
   }
   .picture_post {
-    margin-right: 2em;
+    margin-right: 30px;
   }
   .main_posts {
     margin-right: 2em;
     width: 775px;
   }
   .image {
-    width: 100%;
+    width: 103%;
   }
   
   .post {
@@ -218,13 +255,13 @@
   }
   
   .post:not(:first-child) {
-    margin-top: 3.75em;
+    margin-top: 60px;
   }
 
   
   .title_post {
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin-top: 0;
+    margin-bottom: 18px;
     font: 20px OpenSans_Bold;
     text-transform: uppercase;
   }
@@ -239,7 +276,7 @@
   }
   
   .post_text > p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 22px;
     margin: 0;
   }
@@ -282,10 +319,10 @@
   
   /*Стилизация aside*/
   .aside_section {
-    margin-bottom: 3.75em;
+    margin-bottom: 60px;
   }
   .section_search {
-    margin-bottom: 3.75em;
+    margin-bottom: 60px;
   }
 
   .aside {
@@ -294,7 +331,7 @@
   
   .aside_post {
     display: flex;
-    padding: 1.25em 0;
+    margin-bottom: 20px;
   }
   
   .aside_picture_post {
@@ -305,7 +342,7 @@
     font: 14px OpenSans_Bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 0 1.25em;
+    margin: 0 0 20px;
   }
   
   .heading::after {
@@ -389,7 +426,7 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   
   .button_email:hover {
@@ -407,7 +444,7 @@
   
   /*Стилизация тегов эсайд*/
   .section_tags {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .aside_tags {
     display: flex;
@@ -420,7 +457,7 @@
     color: black;
     text-transform: uppercase;
     border: 3px solid #eeeeee;
-    padding: 6px 12px;
+    padding: 3px 10px;
     margin: 4px 4px 0 0;
     display: block;
   }
@@ -471,7 +508,7 @@
 
 
 .product_description {
-  margin-bottom: 2em;
+  margin-bottom: 15px;
   font: 15px OpenSans_Regular;
 }
 
@@ -482,8 +519,8 @@
 
 .text_button_shop {
   background-color: #b59f5b;
-  padding: 17px 25px;
-  font: 14px OpenSans_Bold;
+  padding: 17px 30px;
+  font: 13px OpenSans_Bold;
   text-transform: uppercase;
 }
 .link_button {
@@ -494,28 +531,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
+  width: 100%;
+  margin-bottom: 17px;
 }
 .wrapper_text_price {
  border: 3px solid #b59f5b;
- padding: 20px 40px;
+ padding: 20px;
  display: flex;
- justify-content: center;
  align-items: center;
  flex-direction: column;
- min-height: 267px;
+ height: 100%;
 
  position: relative;
- bottom: 30px;
+ bottom: 36px;
 
 }
 .text_shop {
-  margin-bottom: 25px;
+  margin-bottom: 20px; 
 }
 .title_shop {
-  margin-top: 1em;
-  margin-bottom: 0.8em;
-  font: 19px OpenSans_Bold;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font: 20px OpenSans_Bold;
   text-transform: uppercase;
 }
 .price_shop {
@@ -545,7 +582,7 @@
   }
   
   .socials {
-    padding: 30px 0;
+    padding: 35px 0;
     background-color: #f4f7f6;
     margin-bottom: 60px;
 
@@ -596,12 +633,14 @@
   @media (min-width: 641px) and (max-width: 1200px ) {
     
     .header {
-    padding: 50px 35px 0;
+    padding: 35px;
     background-image: url(../images/banner-bg-tablet.jpg);
     width: 100%;
+    margin-bottom: 40px;
     }
     .headline {
       width: 610px;
+      padding: 90px 0;
     }
     .title_header {
       font-size: 38px;
@@ -629,22 +668,31 @@
     .trends_wrapper {
       flex-wrap: wrap;
       padding: auto;
-
+      margin-bottom: 40px;
     }
     .trend_post {
-      width: 49.8%;     
+      width: 49.5%; 
+      min-height: 250px;    
       margin: auto;
-      margin-bottom: 0.3em;
+      margin-bottom: 3px;
     }
     .trend_text {
       font: 17px OpenSans_Bold;
     }
+    .heading_trends {
+      margin: 0 0 20px;
+    }
     .main {
-      margin-bottom: 2.5em;
+      margin-bottom: 10px;
       width: 91%;
     }
+    .main_wrapper {
+      margin-bottom: 60px;
+    }
+    .date_author {
+      margin-bottom: 30px;
+    }
 
-    
     .main_posts {
       margin: auto;
     }
@@ -655,8 +703,11 @@
     .post {
       display: flex;
       flex-direction: column;
-      margin-right: 35px;
+      margin-right: 45px;
 
+    }
+    .post:not(:first-child) {
+      margin-top: 65px;
     }
     .picture_post {
       width: 100%;
@@ -665,7 +716,7 @@
 
     .title_post {
       margin-top: 0.5em;
-      margin-bottom: 1em;
+      margin-bottom: 20px;
       font: 17px OpenSans_Bold;
     }
     .aside {
@@ -698,22 +749,30 @@
       justify-content: space-between;
       flex-wrap: wrap;
     }
-    .shop_item {
-      flex: 0 1 48%;
-      margin-right: 1px;
+    .shop_item:nth-child(odd) {
+      /*flex: 0 1 46%;*/
+      margin-right: 22px;
     }
+    .text_shop {
+      margin-bottom: 4px;
+    }
+
+    .picture_shop {
+    width: 38vw;
+    }
+
     .wrapper_text_price {
-    display: table;
-    min-width: 320px;
-    }
-    .price_wrapper {
-      width: auto;
+      width: 43vw;
+      padding: 25px 15px;
     }
     .shop {
       width: 100%;
     }
     .footer_wrapper {
       width: 90%;
+    }
+    .socials {
+      margin-bottom: 15px;
     }
 
     }
@@ -728,17 +787,18 @@
     .header {
       padding: 0%;
       background-image: url(../images/banner-mobile.jpg);
+      margin-bottom: 30px;
     }
 
     .logo {
       width: 272px;
-      margin: 0 auto 60px;
+      margin: 0 auto 35px;
     }
     .headline {
       text-align: center;
       width: 300px;
-      padding-top: 40px;
-      padding-bottom: 215px;
+      padding-top: 1px;
+      padding-bottom: 200px;
     }
     .menu {
       content: " ";
@@ -746,7 +806,7 @@
       width: 25px;
       border-bottom: 12px double rgb(255, 255, 255); 
       border-top: 4px solid rgb(255, 255, 255); 
-      margin-left: 80%;
+      margin-left: 90%;
       margin-top: 30px;
       margin-bottom: 180px;
     }
@@ -764,33 +824,49 @@
     .menu_list {
       display: none;
     }
+    
     .trends_wrapper {
       flex-direction: column;
       justify-content: center;
     }
     .trend_post {
       width: 100%;
-      margin: 0.1% 0;
+      margin: 0 0 3px;
+      min-height: 230px;
+    }
+    .trend_text_wrapper {
+    padding: 25px 20px;
+    }
+    .trend_text {
+      font-size: 1rem;
     }
     .main {
-      width: 91%;
+      width: 90%;
       margin: auto;
     }
     .main_wrapper {
       flex-direction: column;
     }
     .main_posts {
-      margin: 0 0 60px;
+      margin: 0 0 30px;
       width: auto;
     }
     .post {
       flex-direction: column;
-      margin: auto;
+      margin: 0 0 7px;
     }
     .picture_post {
       margin: auto;
       width: 100%;
       
+    }
+    .date_author {
+      margin-bottom: 6px;
+    }
+
+    .title_post {
+      font-size: 17px;
+      margin-bottom: 7px;
     }
     .text_post {
       width: 100%;
@@ -820,12 +896,69 @@
       flex-direction: column;
     }
 
-    .shop_picture {
-      width: auto;
-      text-align: center;
+    .picture_shop {
+    width: 80vw;
+    }
+    
+    .wrapper_text_price {
+      width: 92vw;
     }
     .footer_wrapper {
       width: 91%;
     }
+    .socials {
+      margin-bottom: 25px;
+    }
 
   }
+
+  @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape){
+    
+    .trends_wrapper {
+      flex-wrap: nowrap;
+    }
+    .trend_text_wrapper {
+      padding: 15px;
+    }
+
+    .trend_post {
+      width: 100%;
+      min-height: 300px;
+  }
+}
+@media (min-width: 641px) and (max-width: 900px) and (orientation: landscape){
+    
+  .trend_text {
+    font-size: 14px;
+  }
+  .trend_tag {
+    font-size: 10px;
+  }
+  .trend_text_wrapper {
+    padding: 20px 15px;
+    margin: -10px -14px;
+  }
+}
+@media (max-width: 640px) and (orientation: landscape) {
+ 
+  .trends_wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .trend_post {
+    width: 49.5%; 
+    min-height: 230px;    
+    margin: auto;
+    margin-bottom: 3px;
+  }
+  .trend_text {
+    font-size: 14px;
+  }
+  .trend_tag {
+    font-size: 10px;
+  }
+  .trend_text_wrapper {
+    padding: 20px 15px;
+    margin: -10px -14px;
+  }
+}
