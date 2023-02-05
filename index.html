@@ -10,6 +10,43 @@
 </head>
 
 <body>
+  <div class="popup">
+    <div class="popup_container">
+      <div class="popup_header popup_item">
+        <h2 class="popup_title">Ваш фидбек</h2>
+      </div>  
+        <form class="popup_form">
+          <div class="form_input popup_item">
+            <p class="text_input">Как часто вы заходите на сайт?</p>
+            <select name="select_popup" class="popup_cell select_popup">
+              <option>Почти каждый день</option>
+              <option>Пару раз в неделю</option>
+              <option>Раз в неделю</option>
+              <option>Пару раза в месяц</option>
+              <option>Очень редко</option>
+            </select>
+           </div> 
+           <div class="popup_radio popup_item">
+            <p class="topic_radio">Вы пописаны на e-mail рассылку?</p>
+            <label class="radio_group">
+              <input type="radio" class="popup_radio" name="radio_group">
+              <span class="text_radio">Да</span>
+            </label>
+            <label class="radio_group">
+              <input type="radio" class="popup_radio" name="radio_group">
+              <span class="text_radio">Нет</span>
+            </label>
+           </div> 
+           <div class="popup_textarea popup_item">
+            <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+            <textarea name="field_textarea" placeholder="Может, больше рецептов?" class="popup_cell" rows="8"></textarea>
+           </div>
+           <button class="popup_button popup_item popup_cell">Отправить</button>
+        </form>
+      </div>
+      <button class="popup_close" type="button"></button>
+    </div>
+  </div>
   <header class="header">
     <div class="header_wrapper">
       <div class="logo_menu">
@@ -327,20 +364,20 @@
         </section>
       </aside>
     </div>
-    <article class="shop">
+    <section class="shop">
       <h2 class="heading_trends">Наши изделия</h2>
-      <section class="shop_wrapper">
-        <div class="product_one shop_item">
-          <figure>
+      <div class="shop_wrapper">
+        <article class="product_one shop_item">
+          <div>
             <a href=#0>
               <picture class="shop_picture">
                 <source class="shop_picture" srcset="images/shop-item-tablet1.jpg" alt="Подушки на диван"
                   media="(min-width: 641px) and (max-width: 1200px )">
                 <source srcset="images/shop-item-mobile1.jpg" alt="Подушки на диван" media="(max-width: 640px)">
-                <img src="images/shop-item-desk1.jpg" alt="Подушки на диван">
+                <img src="images/shop-item-desk1.jpg" alt="Подушки на диван" class="picture_shop">
               </picture>
             </a>
-          </figure>
+          </div>
           <div class="wrapper_text_price">
             <div class="text_shop">
               <h3 class="title_shop"><a href=#0 class="link_title_post">подушки на диван</a></h3>
@@ -356,21 +393,21 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="product_two shop_item">
-          <figure>
+        </article>
+        <article class="product_two shop_item">
+          <div>
             <a href=#0>
               <picture class="shop_picture">
                 <source srcset="images/shop-item-tablet2.jpg" alt="кукла зайчик"
                   media="(min-width: 641px) and (max-width: 1200px )">
                 <source srcset="images/shop-item-mobile2.jpg" alt="кукла зайчик" media="(max-width: 640px)">
-                <img src="images/shop-item-desk2.jpg" alt="кукла зайчик">
+                <img src="images/shop-item-desk2.jpg" alt="кукла зайчик" class="picture_shop">
               </picture>
             </a>
-          </figure>
+          </div>
           <div class="wrapper_text_price">
             <div class="text_shop">
-              <h3 class="title_shop"><a href=#0 class="link_title_post">кукла зайчик</a></h3>
+              <h3 class="title_shop"><a href=#0 class="link_title_post">кукла «Зайчик»</a></h3>
               <p class="product_description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
                 <a href=#0 class="shop_link">весенняя серия постов </a>в блоге и несколько подкастов.</p>
             </div>
@@ -383,15 +420,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="product_three shop_item">
+        </article>
+        <article class="product_three shop_item">
           <figure>
             <a href=#0>
               <picture class="shop_picture">
                 <source srcset="images/shop-item-tablet3.jpg" alt="шестиугольная рамка"
                   media="(min-width: 641px) and (max-width: 1200px )">
                 <source srcset="images/shop-item-mobile3.jpg" alt="шестиугольная рамка" media="(max-width: 640px)">
-                <img src="images/shop-item-desk3.jpg" alt="шестиугольная рамка">
+                <img src="images/shop-item-desk3.jpg" alt="шестиугольная рамка" class="picture_shop">
               </picture>
             </a>
           </figure>
@@ -411,9 +448,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </article>
+        </article>
+      </div>
+    </section>
   </div>
   <footer class="footer">
     <div class="footer_wrapper">
