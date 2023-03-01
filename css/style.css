@@ -16,8 +16,10 @@
     padding: 0;
   }
   /*Стилизация popup*/
+  .popup_hidden {
+     display: none;
+  }
   .popup {
-    display: none;
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
@@ -25,27 +27,34 @@
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
 	  left: 0;
-	  /*display: flex;*/
+	  display: flex;
 	  z-index: 10;
 
   }
   .popup_close {
     content: "";
 	  position: relative;
-	  width: 20px;
-	  height: 20px;
-    top: -25px;
-    left: 374px;
+	  width: 26px;
+	  height: 26px;
+    top: -35px;
+    left: 340px;
 	  background: url(../svg/form-x.svg);
   }
   .popup_container {
-	  max-width: 391px;
+	  width: 390px;
+    min-height: 547px;
     margin: auto;
     background-color:rgb(255, 255, 255);
     box-sizing: border-box;
     position: relative;
+    margin-top: 235px;
+    padding: 0 25px;
 
   }
+  .item_margin {
+    font: 16px OpenSans_Regular;
+  }
+
   .popup_header {
     text-align: center;
   }
@@ -57,21 +66,25 @@
     background-color: #e1d9bd;
     margin: 10px auto 0;
 
-
   }
   .popup_item {
-    margin: 30px;
+    margin: 25px 0 ;
+  }
+  .popup_textarea {
+    margin: 25px 0 5px;
   }
   .item_margin {
     margin-bottom: 10px;
   }
   .popup_cell {
     width: 330px;
+    border: none;
+    background-color: #f3f7f5;
+    padding: 15px 20px;
   }
   .popup_title {
     text-transform: uppercase;
     font: 20px OpenSans_Bold;
-    margin: 40px 0 0;
   }
   
   .select_popup {
@@ -100,6 +113,7 @@
     font: 14px OpenSans_Bold;
     color: #eeeeee;
     text-transform: uppercase;
+    margin-bottom: 50px;
   }
   
   /*Стилизация шапки */
@@ -305,7 +319,7 @@
     width: 775px;
   }
   .image {
-    width: 103%;
+    width: 100%;
   }
   
   .post {
@@ -689,6 +703,7 @@
 
 
   @media (min-width: 641px) and (max-width: 1200px ) {
+
     
     .header {
     padding: 35px;
@@ -735,14 +750,15 @@
       margin-bottom: 3px;
     }
     .trend_text {
-      font: 17px OpenSans_Bold;
+      font: 19px OpenSans_Bold;
     }
     .heading_trends {
       margin: 0 0 20px;
     }
     .main {
       margin-bottom: 10px;
-      width: 91%;
+      width: 100%;
+      padding: 0 35px;
     }
     .main_wrapper {
       margin-bottom: 60px;
@@ -774,29 +790,12 @@
 
     .title_post {
       margin-top: 0.5em;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       font: 17px OpenSans_Bold;
     }
-    .aside {
-      width: 68.5%;
-      max-width: 397px;
-    }
+
     .aside_post {
       width: 100%;
-    }
-    .button {
-      left: 29.5vw;
-    }
-
-    .button_email {
-      width: 34.5vw;
-    }
-    .field_email {
-      width: 34.5vw;
-    }
-
-    .field {
-      width: 31vw;
     }
 
     .aside_tags {
@@ -806,22 +805,26 @@
     .shop_wrapper {
       justify-content: space-between;
       flex-wrap: wrap;
+
     }
-    .shop_item:nth-child(odd) {
-      /*flex: 0 1 46%;*/
-      margin-right: 22px;
-    }
+
     .text_shop {
       margin-bottom: 4px;
     }
 
     .picture_shop {
-    width: 38vw;
+      width: calc(44vw - 45px);
+    }
+    .shop_item {
+      flex-basis: calc(50% - 11px);
+    }
+    .shop_wrapper {
+      column-gap: 22px;
     }
 
     .wrapper_text_price {
-      width: 43vw;
       padding: 25px 15px;
+      width: 100%;
     }
     .shop {
       width: 100%;
@@ -839,6 +842,25 @@
 
   
   @media  (max-width: 640px ) {
+    .popup {
+      padding: 0 15px;
+    }
+    .popup_container {
+      width: 100%;
+      padding: auto;
+      margin-top: 55px;
+    }
+    .popup_item {
+      width: 100%;
+    }
+    .popup_cell {
+      width: 100%;
+    }
+    .popup_close {
+      top: -34px;
+      left: 99%;
+
+    }
 
     .header {
       padding: 0%;
@@ -897,8 +919,8 @@
       font-size: 1rem;
     }
     .main {
-      width: 90%;
-      margin: auto;
+      width: 100%;
+      padding: 0 25px;
     }
     .main_wrapper {
       flex-direction: column;
@@ -909,7 +931,7 @@
     }
     .post {
       flex-direction: column;
-      margin: 0 0 7px;
+  
     }
     .picture_post {
       margin: auto;
@@ -931,13 +953,13 @@
       width: 100%;
     }
     .field {
-      width: 83vw;
+      width: 90%;
     }
     .button {
-      left: 83vw;
+      left: 90%;
     }
     .button_email {
-      width: 91vw;
+      width: 100%;
     }
     .field_email {
       width: 91vw;
