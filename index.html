@@ -10,12 +10,13 @@
 </head>
 
 <body>
-  <div class="popup">
-    <div class="popup_container">
-      <button class="popup_close" type="button"></button>
-      <div class="popup_header popup_item">
-        <h2 class="popup_title">Ваш фидбек</h2>
-      </div>  
+  <div class="popup_hidden">
+    <div class="popup">
+      <div class="popup_container">
+        <button class="popup_close" type="button"></button>
+        <div class="popup_header popup_item">
+          <h2 class="popup_title">Ваш фидбек</h2>
+        </div>  
         <form class="popup_form">
           <div class="form_input popup_item">
             <p class="text_input item_margin">Как часто вы заходите на сайт?</p>
@@ -38,9 +39,9 @@
               <span class="text_radio">Нет</span>
             </label>
            </div> 
-           <div class="popup_textarea popup_item">
+           <div class="popup_textarea">
             <p class="item_margin">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-            <textarea name="field_textarea" placeholder="Может, больше рецептов?" class="popup_cell" rows="8"></textarea>
+            <textarea name="field_textarea" placeholder="Может, больше рецептов?" class="popup_cell" rows="7"></textarea>
            </div>
            <button class="popup_button popup_item popup_cell">Отправить</button>
         </form>
