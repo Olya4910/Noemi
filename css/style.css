@@ -17,7 +17,7 @@
   }
   /*Стилизация popup*/
   .popup_hidden {
-     /*display: none;*/
+     display: none;
   }
   .popup {
     width: 100%;
@@ -960,16 +960,16 @@
       width: 100%;
     }
     .field {
-      width: 90%;
+      width: 84%;
     }
     .button {
-      left: 90%;
+      left: 88%;
     }
     .button_email {
       width: 100%;
     }
     .field_email {
-      width: 91vw;
+      width: 100%;
     }
     .aside_tag {
       font-size: 12px;
